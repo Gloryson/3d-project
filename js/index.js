@@ -26,9 +26,6 @@ function init () {
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0x000000);
 
-	let light = new THREE.AmbientLight(0xffffff);
-	scene.add(light);
-
 	controls = new PointerLockControls(camera, document.body);
 
 	document.body.addEventListener('click', () => {
