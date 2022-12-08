@@ -36,6 +36,11 @@ function createRoom (scene) {
 	leftWall.position.set(-150, 50, 0);
 	scene.add(leftWall);
 
+	let rib = new THREE.Mesh(new THREE.BoxGeometry(301, 301, 301), new THREE.MeshBasicMaterial({transparent: true, map: imgLoader.load('./img/rib.png'), side: THREE.DoubleSide}));
+	rib.rotateX(Math.PI / 4);
+	rib.position.set(0, 50, 0);
+	scene.add(rib)
+
 }
 
 export {createRoom};
