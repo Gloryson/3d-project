@@ -32,6 +32,13 @@ function init () {
 		controls.lock();
 	});
 
+	controls.addEventListener('lock', () => {
+		document.querySelector('.lock-screen').classList.add('off');
+	})
+
+	controls.addEventListener('unlock', () => {
+		document.querySelector('.lock-screen').classList.remove('off');
+	})
 
 	scene.add(controls.getObject());
 
