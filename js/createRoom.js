@@ -6,7 +6,7 @@ function createRoom (scene) {
 
 	let floor = new THREE.Mesh(
 		new THREE.PlaneGeometry(300, 300),
-		new THREE.MeshBasicMaterial({map: imgLoader.load('floor-texture.jpg')})
+		new THREE.MeshBasicMaterial({map: imgLoader.load('./img/floor-texture.jpg')})
 	);
 	floor.rotateX(-Math.PI / 2);
 	scene.add(floor);
@@ -22,7 +22,7 @@ function createRoom (scene) {
 
 
   let wallGeometry = new THREE.PlaneGeometry(300, 100);
-  let wallMaterial = new THREE.MeshBasicMaterial({map: imgLoader.load('wall-texture.jpg')});
+  let wallMaterial = new THREE.MeshBasicMaterial({map: imgLoader.load('./img/wall-texture.jpg')});
 
 	let backWall = new THREE.Mesh(wallGeometry, wallMaterial);
 	backWall.position.set(0, 50, 150);
