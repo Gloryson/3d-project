@@ -10,14 +10,6 @@ function createRoom (scene) {
 	);
 	floor.rotateX(-Math.PI / 2);
 	scene.add(floor);
-
-	let ceiling = new THREE.Mesh(
-		new THREE.PlaneGeometry(300, 300),
-		new THREE.MeshBasicMaterial({color: 0xfafafa})
-	);
-	ceiling.rotateX(Math.PI / 2);
-	ceiling.position.set(0, 100, 0);
-	scene.add(ceiling);
 	
 
 
@@ -43,6 +35,7 @@ function createRoom (scene) {
 	leftWall.rotateY(Math.PI / 2);
 	leftWall.position.set(-150, 50, 0);
 	scene.add(leftWall);
+
 }
 
 export {createRoom};
