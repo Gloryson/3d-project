@@ -48,7 +48,7 @@ function init () {
 			case 'ArrowLeft': case 'KeyA': moveLeft = true; break;
 			case 'ArrowDown': case 'KeyS': moveBackward = true; break;
 			case 'ArrowRight': case 'KeyD': moveRight = true; break;
-			case 'Space': if (canJump === true) velocity.y += 250; canJump = false; break;
+			case 'Space': if (canJump === true) velocity.y += 225; canJump = false; break;
 		}
 	};
 
@@ -115,10 +115,10 @@ function animate() {
 			canJump = true;
 		}
 
-		if (camera.position.z > 140) camera.position.z = 139.9;
-		if (camera.position.z < -140) camera.position.z = -139.9;
-		if (camera.position.x > 140) camera.position.x = 139.9;
-		if (camera.position.x < -140) camera.position.x = -139.9;
+		if (camera.position.z > 130) camera.position.z = 129.9;
+		if (camera.position.z < -130) camera.position.z = -129.9;
+		if (camera.position.x > 130) camera.position.x = 129.9;
+		if (camera.position.x < -130) camera.position.x = -129.9;
 
 	}
 
